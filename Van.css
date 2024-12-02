@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Moranga Bold';
+  src: url('../Moranga-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #80d554;
+    color: #000;
+    height: 200px;
+    
+    margin: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #80d554;
+  }
+  
+  .Alpine-logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    padding-right: 40px;
+    align-items: start;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .content {
+    max-width: 30%;
+    
+    font-size: 25px;
+  }
+  
+  h1 {
+    font-family: 'Moranga Bold', sans-serif;
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  h1 span b{
+    color: #5424ee;
+    font-weight: bold;
+  }
+  
+  h1 span{
+    color: #000;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Tracking Section */
+.tracking-section {
+  display: flex;
+  justify-content: center;
+  
+  
+  width: 1300px;
+  
+}
+
+.tracking-bar {
+  display: flex;
+  align-items: bottom;
+  background: #b5f5b4; /* Lighter green for the bar */
+  border-radius: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: 1000px;
+}
+
+.tracking-input {
+  display: flex;
+  align-items: center;
+  background: #d9ffd8; /* Subtle green background */
+  border-radius: 15px;
+  flex: 1;
+  padding: 10px 15px;
+  gap: 10px;
+  
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #000;
+}
+
+.tracking-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 16px;
+  color: #000;
+}
+
+.track-button {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.track-button:hover {
+  transform: scale(1.05);
+  background: #d9ffd8;
+}
+
+.van-image{
+  align-items:center;
+  padding-bottom: 143px;
+  padding-right: 200px;
+  
+}
+  
+  .van-image img {
+    
+    
+
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .content {
+      text-align: center;
+    }
+  
+    .van-image img {
+      margin-top: 0px;
+    }
+  }
+  
